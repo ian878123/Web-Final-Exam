@@ -2,7 +2,9 @@
     <head>
         <meta charset="utf-8">
         <title>yo.gg</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
         <style type="text/css">
+          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
           *{
             margin: 0;
             padding:0;
@@ -14,9 +16,8 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            /*background: url(VALORANT.jpg) no-repeat;
-            background-size: cover;
-            background-position: center;*/
+            background-color: #faf0e6;
+            font-family: 'Roboto',sans-serif;
           }
           header{
             position: fixed;
@@ -31,9 +32,14 @@
             z-index: 99;
           }
           .logo{
+            align-items: center;
             font-size: 2em;
-            color: white;
+            color: #faf0e6;
             user-select: none;
+          }
+          .imglogo{
+            align-items: center;
+            height: 25px;
           }
           .navigation .btn{
             width: 130px;
@@ -44,32 +50,118 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 1.1em;
-            color: white;
+            color: #faf0e6;
             font-weight: 500;
             margin-left: 15px;
             transition: .5s;
           }
-          .navigation .btn:hover{
-            background: white;
+          .navigation .btn:hover,#home{
+            background: #faf0e6;
             color: #FF5151;
           }
           
+          /*footer*/
+          .footer_container{
+            padding:3rem 0 7rem;
+            text-align:center;
+          }
+          .footer_title{
+            font-size:2.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+          .footer_list,
+          .footer_social{
+            display: flex;
+            justify-content: center;
+          }
+          .footer_list{
+            margin:2.5rem 0;
+            column-gap: 2.5rem;
+          }
+          .footer_link{
+            color: hsl(207,4%,16%);
+            text-decoration: none;
+          }
+          .footer_link:hover{
+            text-decoration: underline;
+          }
+          .footer_social{
+            column-gap: 1.25rem;
+          }
+          .footer_social-link{
+            font-size: 1.25rem;
+            color: hsl(207,4%,16%);
+            transition: transform .3s;
+            text-decoration: none;
+          }
+          .footer_social-link:hover{
+            transform: translateY(-1.5rem);
+          }
+          .footer_copy{
+            display: block;
+            margin-top: 4.5rem;
+            font-size:.813rem;
+            color:hsl(207,4%,56%);
+          }
         </style>
     </head>
     
     <body>
        <header>
-        <h2 class="logo">Valorant</h2>
+        <h2 class="logo"><img src="VALORANT_Logo.png" class="imglogo"> YO.GG</h2>
         <nav class="navigation">
-          <button class="btn">Home</button>
+          <button class="btn" id="home">Home</button>
           <button class="btn">Agents</button>
           <button class="btn">Weapons</button>
           <button class="btn">Maps</button>
           <button class="btn">Contact</button>
         </nav>
        </header>
-       <section>
-        
-       </section>
+
+      <button>連接至官網</button>
+
+       <!--maps-->
+       <hr>
+       <!--footer-->
+       <footer class="footer">
+        <div class="footer_container">
+          <h1 class="footer_title">Ian Yulun</h1>
+          <p>Frontend Developer</p>
+
+          <ul class="footer_list">
+            <li>
+              <a href="#" class="footer_link">Home</a>
+            </li>
+
+            <li>
+              <a href="" class="footer_link">Skills</a>
+            </li>
+
+            <li>
+              <a href="" class="footer_link">Projects</a>
+            </li>
+          </ul>
+
+          <ul class="footer_social">
+            <a href="" target="_blank" class="footer_social-link">
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+
+            <a href="" target="_blank" class="footer_social-link">
+              <i class="ri-youtube-fill"></i>
+            </a> 
+
+            <a href="" target="_blank" class="footer_social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>   
+          </ul>
+
+          <span class="footer_copy">
+            &#169;Copyright Bedimcode. All rights reserved
+          </span>
+        </div>
+       </footer>
+
     </body>
 </html>
