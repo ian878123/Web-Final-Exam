@@ -23,6 +23,10 @@ header{
     color: white;
     user-select: none;
   }
+  .imglogo{
+    align-items: center;
+    height: 25px;
+  }
   .navigation .btn{
     width: 130px;
     height:50px;
