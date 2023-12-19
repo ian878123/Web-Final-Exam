@@ -4,7 +4,7 @@
         <title>yo.gg</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
         <style type="text/css">
-          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
           *{
             margin: 0;
             padding:0;
@@ -12,15 +12,10 @@
             font-family: 'Poppins',sans-serif;
           }
           body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            /*min-height: 100vh;*/
             background-color: #faf0e6;
-            font-family: 'Roboto',sans-serif;
           }
           header{
-            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -59,9 +54,119 @@
             background: #faf0e6;
             color: #FF5151;
           }
+          hr{
+            border: 1px solid ;
+          }
+
+          /*btn1*/
+          .btnback{
+            width:100%;
+            z-index: 1;
+          }
+          .btn1{
+            text-align: center;
+          }
+          .btn01{
+            position:absolute;
+            background:white;
+            color:white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 3em;
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            padding: 10px 30px;
+            transition: 0.5s;
+          }
+          .btn01:hover{
+            letter-spacing: 0.25em;
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+          }
+          .btn01:before{
+            content: '';
+            position: absolute;
+            inset: 4px;
+            background: black;
+          }
+          a span{
+            position: relative;
+          }
+          .btn01 i{
+            position: absolute;
+            inset: 0;
+            display: block;
+          }
+          .btn01 i::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 80%;
+            width:10px;
+            height:4px;
+            background: #27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+          }
+          .btn01:hover i::before{
+            width: 20px;
+            left: 20%;
+          }
+
+          .btn01 i::after{
+            content: '';
+            position: absolute;
+            bottom:0;
+            left: 20%;
+            width:10px;
+            height:4px;
+            background: #27282c;
+            transform: translateX(-50%) skewX(325deg);
+            transition: 0.5s;
+          }
+          .btn01:hover i::after{
+            width: 20px;
+            left: 80%;
+          }
+
+          /*introduce*/
+          .int_container{
+            width: 100%;
+            text-align:center;
+            display:flex;
+          }
+          .int_text{
+            padding:3rem 7rem;
+            width: 50%;
+            font-size: 30;
+          }
+          .int_title{
+            color: #FF5151;
+            font-size: 110;
+            font-weight: 600;
+          }
+          .int_textp{
+            margin:10% 0 0 0;
+          }
+          .int_img{    
+            align-items: center;
+            justify-content: center;
+            padding:3rem 7rem;
+            width: 50%;
+          }
+          .int_img img{
+            width:100%;
+            float: right;    
+          }
           
           /*footer*/
+          footer{
+            align-items: center;
+            justify-content: center;
+          }
           .footer_container{
+            width:100%;
             padding:3rem 0 7rem;
             text-align:center;
           }
@@ -108,60 +213,108 @@
     </head>
     
     <body>
-       <header>
-        <h2 class="logo"><img src="VALORANT_Logo.png" class="imglogo"> YO.GG</h2>
-        <nav class="navigation">
-          <button class="btn" id="home">Home</button>
-          <button class="btn">Agents</button>
-          <button class="btn">Weapons</button>
-          <button class="btn">Maps</button>
-          <button class="btn">Contact</button>
-        </nav>
-       </header>
+      <header>
+      <h2 class="logo"><img src="VALORANT_Logo.png" class="imglogo"> YO.GG</h2>
+      <nav class="navigation">
+        <button class="btn" id="home">Home</button>
+        <button class="btn">Agents</button>
+        <button class="btn">Weapons</button>
+        <button class="btn">Maps</button>
+        <button class="btn">Contact</button>
+      </nav>
+      </header>
 
-      <button>連接至官網</button>
+      <!--btn1-->
+      <div class="btn1">
+        <img src="btnback2.avif" class="btnback">
+        <a href="" class="btn01" style="--clr:#FF5151;left:1085px; top:850px; z-index: 2;"><span>連接至官網</span><i></i></a>
+      </div>
 
-       <!--maps-->
-       <hr>
-       <!--footer-->
-       <footer class="footer">
-        <div class="footer_container">
-          <h1 class="footer_title">Ian Yulun</h1>
-          <p>Frontend Developer</p>
-
-          <ul class="footer_list">
-            <li>
-              <a href="#" class="footer_link">Home</a>
-            </li>
-
-            <li>
-              <a href="" class="footer_link">Skills</a>
-            </li>
-
-            <li>
-              <a href="" class="footer_link">Projects</a>
-            </li>
-          </ul>
-
-          <ul class="footer_social">
-            <a href="" target="_blank" class="footer_social-link">
-              <i class="ri-facebook-box-fill"></i>
-            </a>
-
-            <a href="" target="_blank" class="footer_social-link">
-              <i class="ri-youtube-fill"></i>
-            </a> 
-
-            <a href="" target="_blank" class="footer_social-link">
-              <i class="ri-instagram-fill"></i>
-            </a>   
-          </ul>
-
-          <span class="footer_copy">
-            &#169;Copyright Bedimcode. All rights reserved
-          </span>
+      <!--introduce-->
+      <div class="int_container">
+        <div class="int_text">
+          <h1 class="int_title">遊戲玩法</h1>
+          <div class="int_textp">
+            <p>《特戰英豪》是基於團隊的射擊遊戲以及第一人稱射擊遊戲，經典玩法採取五打五的爆破模式，亦有其他原創模式供玩家選擇。你可以在攻防輪替中善用頂尖槍法與戰略技能，努力搶下13回合。每回合都只有一條命，想活到最後，你的腦筋就得動得比對手快。在競技模式、一般模式、死鬥模式以及輻能搶攻戰中奮勇迎敵。</p>
+          </div>
         </div>
-       </footer>
+
+        <div class="int_img">
+          <img src="valorant_int.jpg">
+        </div>
+      </div>
+      <hr>
+
+      <!--agents-->
+      <div class="int_container">
+        <div class="int_img">
+          <img src="valorant_age.jpg">
+        </div>
+        
+        <div class="int_text">
+          <h1 class="int_title">特務</h1>
+          <div class="int_textp">
+            <p>遊戲特色在於，玩家能夠使用具有不同技能、稱為「特務（Agent）」的遊戲角色參加戰鬥並分工團隊中相應的工作以幫助隊伍獲得勝利。除了槍枝彈藥，慎選特務也很重要！他們身手敏捷、適應力強，而且個個都身懷絕技，能為你製造出絕佳的槍戰play！每名特務皆獨一無二，就像每個精彩片段都絕對不可能重複。</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!--introduce-->
+      <div class="int_container">
+        <div class="int_text">
+          <h1 class="int_title">地圖</h1>
+          <div class="int_textp">
+            <p>每張地圖，都是讓你展現創新思維的競技場，專為團隊策略、高超技巧與分秒必爭的對戰所打造。快秀一波精彩操作，成為其他玩家的經典模範。截至目前為止，遊戲共釋出十張地圖，分別為「劫境之地」、「遺落境地」、「雙塔迷城」、「義境空島」、「極地寒港」、「熱帶樂園」、「天漠之峽」、「深海遺珠」、「蓮華古城」以及「日落大道」。其中「深海遺珠」和「極地寒港」為目前在一般及競技模式被暫時移除的地圖</p>
+          </div>
+        </div>
+
+        <div class="int_img">
+          <img src="valorant_map.webp">
+        </div>
+      </div>
+      <hr>
+
+      <!--footer-->
+      <footer class="footer">
+      <div class="footer_container">
+        
+        <h1 class="footer_title">Ian&Yulun</h1>
+        <p>Frontend Developer</p>
+
+        <ul class="footer_list">
+          <li>
+            <a href="#" class="footer_link">Home</a>
+          </li>
+
+          <li>
+            <a href="" class="footer_link">Introduce</a>
+          </li>
+
+          <li>
+            <a href="" class="footer_link">Agents</a>
+          </li>
+        </ul>
+
+        <ul class="footer_social">
+          <a href="" target="_blank" class="footer_social-link">
+            <i class="ri-facebook-box-fill"></i>
+          </a>
+
+          <a href="" target="_blank" class="footer_social-link">
+            <i class="ri-youtube-fill"></i>
+          </a> 
+
+          <a href="" target="_blank" class="footer_social-link">
+            <i class="ri-instagram-fill"></i>
+          </a>   
+        </ul>
+
+        <span class="footer_copy">
+          &#169;<!--Copyright Bedimcode. All rights reserved-->Some of the contents refer to offical
+        </span>
+      </div>
+      </footer>
 
     </body>
 </html>
