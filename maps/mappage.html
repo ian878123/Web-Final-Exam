@@ -4,7 +4,14 @@
         <title>yo.gg-maps</title>
         <link rel="stylesheet" href="mapstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
+        
+        <script>
+            window.onload = function(){
+                document.getElementById("Ascent").addEventListener("click", function(){
+                    document.getElementById("displayarea").innerHTML = "<img src='mapimg/Loading_Screen_Ascent.webp' alt='Ascent'><p>Ascent</p>";
+                });
+            }
+        </script>
     </head>
     
     <body>
@@ -22,36 +29,42 @@
         <div class="maplist">
             <ul>
                 <li>
-                    <img src="mapimg\Loading_Screen_Ascent.webp" alt="Ascent"><p>Ascent</p>
+                    <div id="Ascent">
+                        <img src="mapimg\Loading_Screen_Ascent.webp" alt="Ascent"><p>Ascent</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Bind.webp" alt="Bind"><p>Bind</p>
+                    <img src="mapimg\Loading_Screen_Bind.webp" alt="Bind" id="Bind"><p>Bind</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Breeze.webp" alt="Breeze"><p>Breeze</p>
+                    <img src="mapimg\Loading_Screen_Breeze.webp" alt="Breeze" id="Breeze"><p>Breeze</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Fracture.webp" alt="Fracture"><p>Fracture</p>
+                    <img src="mapimg\Loading_Screen_Fracture.webp" alt="Fracture" id="Fracture"><p>Fracture</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Haven.webp" alt="Haven"><p>Haven</p>
+                    <img src="mapimg\Loading_Screen_Haven.webp" alt="Haven" id="Haven"><p>Haven</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Icebox.webp" alt="Icebox"><p>Icebox</p>
+                    <img src="mapimg\Loading_Screen_Icebox.webp" alt="Icebox" id="Icebox"><p>Icebox</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Lotus.webp" alt="Lotus"><p>Lotus</p>
+                    <img src="mapimg\Loading_Screen_Lotus.webp" alt="Lotus" id="Lotus"><p>Lotus</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Pearl.webp" alt="Pearl"><p>Pearl</p>
+                    <img src="mapimg\Loading_Screen_Pearl.webp" alt="Pearl" id="Pearl"><p>Pearl</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Split.webp" alt="Split"><p>Split</p>
+                    <img src="mapimg\Loading_Screen_Split.webp" alt="Split" id="Split"><p>Split</p>
                 </li>
                 <li>
-                    <img src="mapimg\Loading_Screen_Sunset.webp" alt="Sunset"><p>Sunset</p>
+                    <img src="mapimg\Loading_Screen_Sunset.webp" alt="Sunset" id="Sunset"><p>Sunset</p>
                 </li>
             </ul>
+        </div>
+
+        <div id="displayarea">
+
         </div>
 
     </body>
