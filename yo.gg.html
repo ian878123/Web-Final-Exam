@@ -12,7 +12,6 @@
             font-family: 'Poppins',sans-serif;
           }
           body{
-            /*min-height: 100vh;*/
             background-color: #faf0e6;
           }
           header{
@@ -64,6 +63,9 @@
             z-index: 1;
           }
           .btn1{
+            box-sizing: border-box;
+            width:100%;
+            align-items: center;
             text-align: center;
           }
           .btn01{
@@ -77,6 +79,11 @@
             font-weight: 600;
             padding: 10px 30px;
             transition: 0.5s;
+            --clr:#FF5151;
+
+            left:42%; 
+            top:62%;
+            z-index: 99;
           }
           .btn01:hover{
             letter-spacing: 0.25em;
@@ -209,6 +216,18 @@
             font-size:.813rem;
             color:hsl(207,4%,56%);
           }
+          @media (max-width: 1860px){
+            .btn01{
+            left:40%; 
+            top:46%;
+          }
+          }
+          @media (max-width: 1860px){
+            .btn01{
+            left:37%; 
+            top:38%;
+          }
+          }
         </style>
     </head>
     
@@ -217,21 +236,22 @@
       <h2 class="logo"><img src="VALORANT_Logo.png" class="imglogo"> YO.GG</h2>
       <nav class="navigation">
         <button class="btn" id="home">Home</button>
-        <button class="btn">Agents</button>
-        <button class="btn">Weapons</button>
-        <button class="btn">Maps</button>
-        <button class="btn">Contact</button>
+        <button class="btn" id="agents" onclick="location.href='valorant ch/agentspage.html'">Agents</button>
+        <button class="btn" id="weapons" onclick="location.href='valorant we/weaponshomepage.html'">Weapons</button>
+        <button class="btn" id="maps" onclick="location.href='maps/mappage.html'">Maps</button>
+        <button class="btn" id="contact" onclick="location.href='contact/contactpage.html'">Contact</button>
       </nav>
       </header>
 
       <!--btn1-->
+      <img src="btnback2.avif" class="btnback">
       <div class="btn1">
-        <img src="btnback2.avif" class="btnback">
-        <a href="" class="btn01" style="--clr:#FF5151;left:1085px; top:850px; z-index: 2;"><span>連接至官網</span><i></i></a>
+        <a href="https://playvalorant.com/zh-tw/?utm_campaign=188_904_5784_TWM_VALORANT&wpsrc=Google%20AdWords&wpscid=&wpsnetn=x&wpkwn=&utm_source=google&wpkmatch=&wpcrid=&utm_medium=keyword&wpcid=20757035695&wpkwid=&gad_source=1&gclid=Cj0KCQiA4Y-sBhC6ARIsAGXF1g5BHbVZusljV4OSJ62Cl2S_q9WJmYS3-ZaxSrMu0xAE-8tFBTRyjWcaAmh9EALw_wcB" class="btn01">
+          <span>連接至官網</span><i></i></a>
       </div>
 
       <!--introduce-->
-      <div class="int_container">
+      <div class="int_container" id="introduce">
         <div class="int_text">
           <h1 class="int_title">遊戲玩法</h1>
           <div class="int_textp">
@@ -246,7 +266,7 @@
       <hr>
 
       <!--agents-->
-      <div class="int_container">
+      <div class="int_container" id="agent">
         <div class="int_img">
           <img src="valorant_age.jpg">
         </div>
@@ -284,28 +304,28 @@
 
         <ul class="footer_list">
           <li>
-            <a href="#" class="footer_link">Home</a>
+            <a href="#home" class="footer_link">Home</a>
           </li>
 
           <li>
-            <a href="" class="footer_link">Introduce</a>
+            <a href="#introduce" class="footer_link">Introduce</a>
           </li>
 
           <li>
-            <a href="" class="footer_link">Agents</a>
+            <a href="#agent" class="footer_link">Agents</a>
           </li>
         </ul>
 
         <ul class="footer_social">
-          <a href="" target="_blank" class="footer_social-link">
+          <a href="https://www.facebook.com/VALORANTtw/" target="_blank" class="footer_social-link">
             <i class="ri-facebook-box-fill"></i>
           </a>
 
-          <a href="" target="_blank" class="footer_social-link">
+          <a href="https://www.youtube.com/channel/UCV7Uy7ZrpHmkOvHsLOsD_Jw" target="_blank" class="footer_social-link">
             <i class="ri-youtube-fill"></i>
           </a> 
 
-          <a href="" target="_blank" class="footer_social-link">
+          <a href="https://www.instagram.com/valoranttw" target="_blank" class="footer_social-link">
             <i class="ri-instagram-fill"></i>
           </a>   
         </ul>
