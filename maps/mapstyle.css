@@ -52,7 +52,20 @@ header{
   }
   .maplist{
     width: 20%;
+    height: 80%;
     float: left;
+    overflow-y: scroll;
+  }
+  .maplist::-webkit-scrollbar{
+    width: 10px;
+  }
+  .maplist::-webkit-scrollbar-thumb{
+    background: #ff5151a9;
+    border-radius: 10px;
+  }
+  .maplist::-webkit-scrollbar-track{
+    background: gray;
+    border-radius: 10px;
   }
   .maplist img {
     width: 100%;
@@ -81,14 +94,50 @@ header{
   }
   #displayarea{
     width: 80%;
+    padding: 10px;
     float: left;
   }
-  #displayarea img{
-    width: 80%;
+  .minimap{
+    width: 50%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float:right;
   }
+  #displayarea h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 10px 0;
+  }
+  #displayarea p{
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0;
+  }
+  .legend {
+    color: white;
+    background: #1F1F1F;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-item:last-child {
+    margin-bottom: 0;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
 
 
