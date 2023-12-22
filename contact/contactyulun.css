@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root{
+  --small-font-size:.813rem;
+  --font-semi-bold:
+  --title-font: 'Lora', serif;
+  --text-color-light: hsl(207, 4%, 56%);
+  --normal-font-size: .938rem;
+  --title-color:hsl(207,4%,16%);
+  --body-color:#faf0e6;
+}
 *{
   margin: 0;
   padding:0;
@@ -47,4 +56,88 @@ header{
 .navigation .btn:hover,#contact{
   background: #faf0e6;
   color: #FF5151;
+}
+/*conntact*/
+.contact_container{
+  row-gap: 3.5rem;
+}
+
+.contact_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size:var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+.contact_title i{
+  font-size: 1rem;
+  font-weight: initial;
+}
+.contact_info,
+.contact_data,
+.contact_form{
+  display: grid;
+}
+.contact_info{
+  row-gap: 2em;
+}
+.contact_data{
+  row-gap: .75rem;
+}
+.contact_data-title{
+  font-size:var(--small-font-size);
+  font-family:var(--title-font);
+  color:var(--title-color);
+}
+.contact_button{
+  width:max-content;
+  display:inline-flex;
+  align-items: center;
+  column-gap:.5rem;
+  color:var(--title-color);
+  font-size:var(--small-font-size);
+}
+
+.contact_button i{
+  font-size:1rem;
+  transition:transform .3s;
+}
+
+.contact_button:hover i{
+  transform:translateX(.25rem);
+}
+.contact_form{
+  position:relative;
+  row-gap:2rem;
+}
+.contact_form-div{
+  position:relative;
+  height: 4rem;
+}
+.contact_form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  border-radius:2rem;
+  padding: 1.5rem;
+  font-size: var(--normal-font-size);
+  font-family: var(--title-font);
+  color: var(--title-color);
+  background: none;
+  outline: none;
+  z-index: 1;
+}
+.contact_form-tag{
+  position: absolute;
+  top: -.75rem;
+  left: 1.25rem;
+  z-index: 10;
+  background-color: var(--body-color);
+  color:var(--title-color);
+  font-size: var();
 }

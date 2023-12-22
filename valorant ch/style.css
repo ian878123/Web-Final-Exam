@@ -85,7 +85,7 @@ html, body {
 section.slider {
     padding: 10px 0;
     background: #0e0e16;
-    height: 210vh;
+    height: 200%;
 }
 
 section.slider .title {
