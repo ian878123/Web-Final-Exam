@@ -72,13 +72,13 @@ html, body {
 .title {
 	color: #FF5151;
 	font-size: 70px;
-	font-family: GreatSejagad;
+	
 }
 
 .main_title {
     color: #fff;
     font-size: 70px;
-    font-family: charlieUltra;
+    
 	line-height: 80px;
 }
 
@@ -129,7 +129,6 @@ button.slider__button:hover {
 
 .slide_content p {
     color: #fff;
-    font-family: charlieUltra;
     font-size: 22px;
 	letter-spacing: 1px;
 }
@@ -148,7 +147,7 @@ button.slider__button:hover {
     outline: none;
     transition: all 0.3s ease;
     background: none;
-    font-family: charlieUltra;
+    
     border: 3px solid #FF5151;
     color: #FF5151;
 	letter-spacing: 1px;
