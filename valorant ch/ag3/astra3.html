@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>omen</title>
+    <title>astra</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="agents.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -29,7 +29,7 @@
         const jsonUrl = "https://yu1un.github.io/ag3_json/ag3_json.json";
         $.getJSON(jsonUrl, function (data) {
             for (let agent of data) {
-                if (agent.name == "Omen歐門") {
+                if (agent.name == "Astra亞星卓") {
 
                     let x, y;
                     if (agent.role == "1") {
@@ -56,10 +56,10 @@
 
                     con += '<div class="second"><div class="medium1"><img src="../' + agent.img + '" style="height: 100%;"></div>';
                     con += '<div class="medium2"><h1 style="font-size: 55px;">介紹影片</h1>' + agent.video + '</div></div>';
-                    con += '<div class="third"><div class="small"><img src="' + agent.qicon + '" class="skill"><div class="tag"><p style="font-size: 30px;">' + agent.qskill + '</p><p style="font-size: 20px;">' + agent.qintro + '</p></div></div>';
-                    con += '<div class="small"><img src="' + agent.eicon + '" class="skill"><div class="tag"><p style="font-size: 30px;">' + agent.eskill + '</p><p style="font-size: 20px;">' + agent.eintro + '</p></div></div>';
-                    con += '<div class="small"><img src="' + agent.cicon + '" class="skill"><div class="tag"><p style="font-size: 30px;">' + agent.cskill + '</p><p style="font-size: 20px;">' + agent.cintro + '</p></div></div>';
-                    con += '<div class="small"><img src="' + agent.xicon + '" class="skill"><div class="tag"><p style="font-size: 30px;">' + agent.xskill + '</p><p style="font-size: 20px;">' + agent.xintro + '</p></div></div>';
+                    con += '<div class="third"><div class="small"><img src="' + agent.qicon + '" style="border: white 2px solid; width:40%;"><div class="tag"><p style="font-size: 30px;">' + agent.qskill + '</p><p style="font-size: 20px;">' + agent.qintro + '</p></div></div>';
+                    con += '<div class="small"><img src="' + agent.eicon + '" style="border: white 2px solid; width:40%;"><div class="tag"><p style="font-size: 30px;">' + agent.eskill + '</p><p style="font-size: 20px;">' + agent.eintro + '</p></div></div>';
+                    con += '<div class="small"><img src="' + agent.cicon + '" style="border: white 2px solid; width:40%;"><div class="tag"><p style="font-size: 30px;">' + agent.cskill + '</p><p style="font-size: 20px;">' + agent.cintro + '</p></div></div>';
+                    con += '<div class="small"><img src="' + agent.xicon + '" style="border: white 2px solid; width:40%;"><div class="tag"><p style="font-size: 30px;">' + agent.xskill + '</p><p style="font-size: 20px;">' + agent.xintro + '</p></div></div>';
                     con += "</div>";
 
 
