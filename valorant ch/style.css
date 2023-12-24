@@ -242,4 +242,25 @@ button.slider__button:hover {
 		width: 90%;
 	}
 }
+@media (max-width: 1300px){
+  section.slider{
+    height:200%;
+  }
+  .slide{
+    height: 380;
+    width:220px;
+  }
+  .slider__track{
+    margin-bottom:1%;
+  }
+	.container {
+		width: 100%;
+	}
+}
+@media (max-width: 1200px){
+  .slide{
+    height: 300;
+    width:200px;
+  }
+}
 
