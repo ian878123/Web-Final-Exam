@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="agents.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="ag3_json.json"></script>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
     </section>
 
     <script>
-        const jsonUrl = " https://yu1un.github.io/ag3json/ag3_json.json";
+        const jsonUrl = "https://yu1un.github.io/ag3_json/ag3_json.json";
         $.getJSON(jsonUrl, function (data) {
             for (let agent of data) {
                 if (agent.name == "Omen歐門") {
