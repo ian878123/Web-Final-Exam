@@ -101,7 +101,8 @@ hr{
   margin: 1.5%;
 }
 .skill{
-  height: 50%;
+  
+  width: 40%;
   border: white 2px solid;
 }
 .tag{
