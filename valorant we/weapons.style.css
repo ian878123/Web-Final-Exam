@@ -48,15 +48,6 @@ header{
   color: #FF5151;
 }
 
-@font-face {
-	font-family: charlieUltra;
-	src: url(fonts/charlie-display-ultra.ttf);
-}
-
-@font-face {
-	font-family: GreatSejagad;
-	src: url(fonts/Great_Sejagad.ttf);
-}
 
 .container {
 	width: 1355px;
@@ -67,13 +58,13 @@ header{
 .title {
 	color: #FF5151;
 	font-size: 70px;
-	font-family: GreatSejagad;
+	
 }
 
 .main_title {
     color: #FF5151;
     font-size: 50px;
-    font-family: charlieUltra;
+    
 	line-height: 80px;
 }
 
@@ -124,7 +115,7 @@ button.slider__button:hover {
 
 .slide_content p {
     color: #0e0e16;
-    font-family: charlieUltra;
+    
     font-size: 22px;
 	letter-spacing: 1px;
 }
@@ -143,7 +134,7 @@ button.slider__button:hover {
     outline: none;
     transition: all 0.3s ease;
     background: none;
-    font-family: charlieUltra;
+    
     border: 3px solid #FF5151;
     color: #FF5151;
 	letter-spacing: 1px;
@@ -225,10 +216,10 @@ button.slider__button:hover {
     height:450%;
   }
   .slide{
-    height: 250;
+    height: 200;
     margin:2%;
     margin-left:23%;
-    width:250px;
+    width:200px;
   }
   .slider__track{
     margin-bottom:-1.5%;
@@ -237,4 +228,15 @@ button.slider__button:hover {
 	.container {
 		width: 90%;
 	}
+}
+@media (max-width: 1400px){
+  .slide{
+    height: 250;
+    width:250px;
+    margin-left:40%;
+  }
+  .slider__track{
+    margin-bottom:-1.5%;
+    display:block;
+  }
 }

@@ -47,12 +47,4 @@ header{
   background: #faf0e6;
   color: #FF5151;
 }
-@font-face {
-	font-family: charlieUltra;
-	src: url(fonts/charlie-display-ultra.ttf);
-}
 
-@font-face {
-	font-family: GreatSejagad;
-	src: url(fonts/Great_Sejagad.ttf);
-}
