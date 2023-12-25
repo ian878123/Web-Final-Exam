@@ -1,6 +1,7 @@
 [
     {
         "名稱":"狂弒",
+        "video":"19",
         "icon":"../we/Frenzy_icon.webp",
         "img":"../we/Frenzy.webp",
         "分類":"隨身武器",
@@ -30,6 +31,7 @@
     },
     {
         "名稱":"短管",
+        "video":"58",
         "icon":"../we/Shorty_icon.webp",
         "img":"../we/Shorty.webp",
         "分類":"隨身武器",
@@ -64,6 +66,7 @@
     },
     {
         "名稱":"鬼魅",
+        "video":"29",
         "icon":"../we/Ghost_icon.webp",
         "img":"../we/Ghost.webp",
         "分類":"隨身武器",
@@ -93,6 +96,7 @@
     },
     {
         "名稱":"神射",
+        "video":"43",
         "icon":"../we/Sheriff_icon.webp",
         "img":"../we/Sheriff.webp",
         "分類":"隨身武器",
@@ -122,6 +126,7 @@
     },
     {
         "名稱":"刺針",
+        "video":"113",
         "icon":"../we/Stinger_icon.webp",
         "img":"../we/Stinger.webp",
         "分類":"衝鋒槍",
@@ -158,6 +163,7 @@
     },
     {
         "名稱":"惡靈",
+        "video":"134",
         "icon":"../we/Spectre_icon.webp",
         "img":"../we/Spectre.webp",
         "分類":"衝鋒槍",
@@ -198,6 +204,7 @@
     },
     {
         "名稱":"重砲",
+        "video":"73",
         "icon":"../we/Bucky_icon.webp",
         "img":"../we/Bucky.webp",
         "分類":"霰彈槍",
@@ -232,6 +239,7 @@
     },
     {
         "名稱":"判官",
+        "video":"99",
         "icon":"../we/Judge_icon.webp",
         "img":"../we/Judge.webp",
         "分類":"霰彈槍",
@@ -266,6 +274,7 @@
     },
     {
         "名稱":"鬥牛犬",
+        "video":"155",
         "icon":"../we/Bulldog_icon.webp",
         "img":"../we/Bulldog.webp",
         "分類":"步槍",
@@ -297,6 +306,7 @@
     },
     {
         "名稱":"捍衛者",
+        "video":"175",
         "icon":"../we/Guardian_icon.webp",
         "img":"../we/Guardian.webp",
         "分類":"步槍",
@@ -327,6 +337,7 @@
     },
     {
         "名稱":"幻象",
+        "video":"191",
         "icon":"../we/Phantom_icon.webp",
         "img":"../we/Phantom.webp",
         "分類":"步槍",
@@ -367,6 +378,7 @@
     },
     {
         "名稱":"暴徒",
+        "video":"209",
         "icon":"../we/Vandal_icon.webp",
         "img":"../we/Vandal.webp",
         "分類":"步槍",
@@ -397,6 +409,7 @@
     },
     {
         "名稱":"警長",
+        "video":"259",
         "icon":"../we/Marshal_icon.webp",
         "img":"../we/Marshal.webp",
         "分類":"狙擊步槍",
@@ -427,6 +440,7 @@
     },
     {
         "名稱":"間諜",
+        "video":"233",
         "icon":"../we/Operator_icon.webp",
         "img":"../we/Operator.webp",
         "分類":"狙擊步槍",
@@ -457,6 +471,7 @@
     },
     {
         "名稱":"戰神",
+        "video":"279",
         "icon":"../we/Ares_icon.webp",
         "img":"../we/Ares.webp",
         "分類":"重型武器",
@@ -492,6 +507,7 @@
     },
     {
         "名稱":"奧丁",
+        "video":"300",
         "icon":"../we/Odin_icon.webp",
         "img":"../we/Odin.webp",
         "分類":"重型武器",
