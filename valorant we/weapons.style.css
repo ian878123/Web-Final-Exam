@@ -67,19 +67,19 @@ header{
 .title {
 	color: #FF5151;
 	font-size: 70px;
-	
+	font-family: GreatSejagad;
 }
 
 .main_title {
     color: #FF5151;
     font-size: 50px;
-   
+    font-family: charlieUltra;
 	line-height: 80px;
 }
 
 section.slider {
     padding: 10px 0;
-    background: #272727;
+    background: #0e0e16;
     height: 3000px;
 }
 
@@ -124,7 +124,7 @@ button.slider__button:hover {
 
 .slide_content p {
     color: #0e0e16;
-    
+    font-family: charlieUltra;
     font-size: 22px;
 	letter-spacing: 1px;
 }
@@ -143,7 +143,7 @@ button.slider__button:hover {
     outline: none;
     transition: all 0.3s ease;
     background: none;
-    
+    font-family: charlieUltra;
     border: 3px solid #FF5151;
     color: #FF5151;
 	letter-spacing: 1px;
@@ -237,9 +237,4 @@ button.slider__button:hover {
 	.container {
 		width: 90%;
 	}
-  .main_title {
-    text-align: center;
-   align-items: center;
-   justify-content: center;
-}
 }
